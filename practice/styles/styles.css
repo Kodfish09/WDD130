@@ -1,25 +1,32 @@
 body {
     text-align: center;
 }
+
 nav {
-    background-color: steelblue;
+    background-color: #4682b4;
+    color: blue;
     padding: 10px;
 }
-a {
-    color: white;
-    margin: 40px;
-}
+
 h1 {
-    color: steelblue;
-  }
-  img {
+    color: #4682b4;
+}
+
+img {
     width: 800px;
-    border: 4px solid steelblue;
-  }
-  p {
+    border: 4px solid #4682b4;
+}
+
+p {
     padding: 10px;
-  }
-  footer {
-    background-color: steelblue;
+}
+
+footer {
+    background-color: #4682b4;
     color: white;
-  }
+}
+
+.link {
+    color: blue;
+    padding: 0;
+}
