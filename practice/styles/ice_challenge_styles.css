@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    background-color: #5eaded;
+    color: white;
+    margin-left: 32em;
+    margin-right: 32em;
+}
+
+h1:hover {
+    color: black;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+img {
+    width: 25%;
+}
+
+p {
+    color: black;
+}
+
+#help {
+    color: white;
+}
+
+.bullet {
+    text-align: left;
+    font-weight: bolder;
+    line-height: 1;
+}
+
+#quote {
+    font-size: 2em;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 1.25;
+    font-weight: lighter;
+}
+
+.foot {
+    line-height: 0.25;
+    font-weight: bold;
+    font-size: small;
+}
