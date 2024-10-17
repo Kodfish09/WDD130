@@ -98,6 +98,10 @@ header {
     border: 10px solid #41658A;
 }
 
+.mountains {
+    margin: 100px 0;
+}
+
 footer {
     background-color: #C29C2F;
     color: #41658A;
