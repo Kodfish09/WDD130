@@ -26,6 +26,9 @@ header {
     color: #41658A;
     text-decoration: none;
     font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book a:hover {
     background-color: #C29C2F;
@@ -37,6 +40,9 @@ header {
     color: #9DD9D2;
     text-decoration: none;
     font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .join a:hover {
     background-color: #C29C2F;
@@ -47,11 +53,13 @@ header {
     color: #41658A;
     font-family: 'Edu Australia VIC WA NT Guides', 'Times New Roman', sans-serif;
     font-size: 2em;
+    margin-top: 200px;
 }
 
 .msg {
     background-color: #C29C2F;
     line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
@@ -61,19 +69,40 @@ header {
 .msg p {
     color: #41658A;
     font-size: .8em;
+    padding-bottom: 15px;
 }
 
 .logo {
     width: 80px;
+    padding-top: 5px;
 }
 
 .icon{
     width: 80px;
+    padding-top: 10px;
+}
+
+.rivers-card {
+    margin: 200px 0;
+}
+
+.camping-card {
+    margin: 200px 0;
+}
+
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #41658A;
 }
 
 footer {
     background-color: #C29C2F;
     color: #41658A;
+    padding: 25px 50x;
+    margin-top: 200px;
 }
 
 footer a{
@@ -91,11 +120,15 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }
+footer .social img {
+    padding-top: 15px;
+}
 
 nav a {
     color: #41658A;
     text-align: center;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover{
     color: #9DD9D2;
@@ -134,6 +167,10 @@ h4{
 
 main section{
     text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
 }
 
 #background{
