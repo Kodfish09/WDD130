@@ -29,7 +29,7 @@ h1 {
     display: block;
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: rgb(182, 181, 181);
+    background-color: rgb(181, 181, 181);
 }
 h2{
     color: rgb(147, 1, 1);
