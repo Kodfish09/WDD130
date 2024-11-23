@@ -1,176 +1,242 @@
-
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a & */
-
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Permanent+Marker&display=swap');
+/*Header Section*/
+    main {
+        background-color: beige;
+        margin: 0px;
+        padding: 0px;
+    }
+    header {
+        background-color: #6b8944;
+        display: grid;
+        grid-template-columns: 100px auto;
+        padding: 15px;
+    }
+    header img {
+        width: 100px;
+        grid-column: 1/2;
+    }
+    header nav {
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        font-family: "Permanent Marker";
+    }
+    header nav a{
+        color: #dbb632;
+        font-size: x-large;
+        background-color: #3d561d;
+        padding: 15px 25px;
+        border-radius: 15px;
+    }
+    header nav a:hover{
+        color: #3d561d;
+        background-color: #dbb632;
+    }
+/*End Header Section*/
 
+/*Main Section*/
+    /*Hero Section*/
+        #hero{
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            padding: 10px;
+        }
+        #hero img{
+            width: 100%;
+            grid-column: 1/8;
+        }
+        #hero-text {
+            grid-column: 8/11;
+            padding: 15px;
+            font-size: x-large;
+            background-color: #3d561d;
+            margin: 15px;
+            color: white;
+        }
+    /*End Hero Section*/
+    /*Attractions Section*/
+        #attractions h1{
+            justify-self: center;
+            font-size: 3em;
+            font-family: "Permanent Marker";
+        }
+        #images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 15px;
+            row-gap: 15px;
+            padding: 15px;
+        }
+        /*Image Grid Customization*/
+            #balloon{
+                grid-column: 1/2;
+                grid-row: 1/3;
+                display: grid;
+            }
+            #pie{
+                grid-column: 2/3;
+                grid-row: 2/3;
+                display: grid;
+            }
+            #petting_zoo{
+                grid-column: 2/3;
+                grid-row: 1/2;
+                display: grid;
+            }
+            #two_bunnies{
+                grid-column: 3/4;
+                grid-row: 1/3;
+                display: grid;
+            }
+        .att_txt{
+            width: 85%;
+            height: 85%;
+            background-color: black;
+            opacity: 0%;
+            color: white;
+            padding: 15px;
+            margin: 15px;
+            justify-self: center;
+            align-self: center;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .att_img{
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            justify-self: center;
+            align-self: center;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .att_txt:hover {
+            opacity: 0.75;
+            transition: opacity 0.2s ease-in;
+        }
+    /*End Attractions Section*/
+    /*Attractions Page*/
+        /*Right Side*/
+            .att_right {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                padding: 15px;
+            }
+            .att_right img{
+                width: 100%;
+                height: 100%;
+                max-height: 1000px;;
+                grid-column: 1/12;
+                grid-row: 1/2;
+            }
 
-:root {
-  /* change the values below to your colors from your palette */
-  --primary-color: #dbb632;
-  --secondary-color: #6b8944;
-  --accent1-color: #527227;
-  --accent2-color: #ffffff;
+            .att_right .att_p_text{
+                /*Size and Positioning*/
+                width: 90%;
+                height: 90%;
+                justify-self: center;
+                align-self: center;
+                padding: 20px;
+                border-radius: 25px;
+                /*Grid*/
+                grid-column: 9/13;
+                grid-row: 1/2;
+                /*Color and Formatting*/
+                background-color: #dbb632;
+                color: #3d561d;
+                opacity: 0.9;
+                font-family: "Parkinsans";
+                font-size: x-large;
+            }
+        /*Left Side*/
+            .att_left {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                padding: 15px;
+            }
+            .att_left img{
+                width: 100%;
+                height: 100%;
+                max-height: 1000px;;
+                grid-column: 2/13;
+                grid-row: 1/2;
+            }
 
-  /* change the values below to your chosen font(s) */
-  --heading-font: "Permanent Marker";
-  --paragraph-font: "Edu Australia VIC WA NT Guides";
+            .att_left .att_p_text{
+                /*Size and Positioning*/
+                width: 90%;
+                height: 90%;
+                justify-self: center;
+                align-self: center;
+                padding: 20px;
+                border-radius: 25px;
+                /*Grid*/
+                grid-column: 1/5;
+                grid-row: 1/2;
+                /*Color and Formatting*/
+                background-color: #dbb632;
+                color: #3d561d;
+                opacity: 0.9;
+                font-family: "Parkinsans";
+                font-size: x-large;
+            }
+    /*End Attractions Page*/
+    /*Contact Us Page*/
+        form {
+            justify-self: center;
+            justify-items: center;
+            align-self: center;
+            align-items: center;
+            border: solid black 3px;
+            padding: 25px;
+            margin: 25px;
+        }
 
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #dbb632;  /* headlines on a white background */ 
-  --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #dbb632; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #dbb632;
-  --nav-link-color: #6b8944;
-  --nav-background-color: #dbb632;
-  --nav-hover-link-color: #6b8944;
-  --nav-hover-background-color: #dbb632;
-}
+        #feedback {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: .5em;
+            /* make this element invisible until we are ready for it */
+            display: none;      
+        }
+        .moveDown {
+            margin-top: 3em;
+        }
+    /*End Contact Us Page*/
+/*End Main Section*/
 
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
-
-body {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
-}
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
-header {
-  padding: 1em;
-  text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
-}
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
-}
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 1em;
-}
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
-.colors th {
-  background-color: #999;
-}
-.colors td{
-  width: 25%;
-  height: 3em;
-}
-.primary {
-  background-color: var(--primary-color);
-}
-.secondary {
-  background-color: var(--secondary-color);
-}
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2{
-  background-color: var(--accent2-color);
-}
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
-nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-}
-nav  {
-  list-style-type: none;
-  display: flex;
-}
-nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
-}
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-}
-.sitemap {
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
-}
-.sitemap > div {
-  text-align: center;
-}
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.top {
-  grid-area: top;
-  border-left: 1px solid;
-}
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
-}
-
-.example {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-img {
-  width: 100%;
-}
+/*Footer Section*/
+    p{
+        font-family: "Parkinsans";
+    }
+    footer {
+        background-color: #6b8944;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        padding: 15px;
+        margin-top: 10px;
+    }
+    footer p{
+        font-family: "Parkinsans";
+    }
+    footer p a{
+        color: #dbb632;
+        font-size: x-large;
+        background-color: #3d561d;
+        padding: 15px 25px;
+        border-radius: 15px;
+        font-family: "Permanent Marker";
+    }
+    footer p a:hover{
+        color: #3d561d;
+        background-color: #dbb632;
+    }
+/*End Footer Section*/
