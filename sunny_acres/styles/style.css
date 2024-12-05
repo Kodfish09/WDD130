@@ -15,6 +15,7 @@
     header img {
         width: 100px;
         grid-column: 1/2;
+        border-radius: 100%;
     }
     header nav {
         grid-column: 2/3;
@@ -240,3 +241,21 @@
         background-color: #dbb632;
     }
 /*End Footer Section*/
+
+/*Contact Us*/
+#contact-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+}
+.feedback {
+    width: 100%;
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
+}
+#contact-grid #form{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+/*End Contact Us*/
